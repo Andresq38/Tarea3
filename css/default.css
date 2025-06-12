@@ -1,0 +1,283 @@
+body {
+    background: rgb(252, 252, 252);
+    margin: 5px;
+    font-family: 'Trebuchet MS',Helvetica, sans-serif;
+    line-height: 18px;
+    height: 100%;
+}
+
+.header {
+    background-color:rgb(1, 78, 102);
+    color: rgb(0, 0, 0); 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.header h3 {
+    margin: 0; 
+    font-size: 40;
+    background-color: rgb(1, 78, 102);
+}
+
+.fotos h3 {
+    font-size: 40;
+}
+
+.main-section {
+    background-color: rgb(255, 255, 255); 
+    margin: 0px ;
+    padding: 0px;
+    border-radius: 5px; 
+    flex: 1; 
+}
+
+img.picA {
+    position: relative; 
+    top: -2px; 
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+}
+
+img.picB {
+    position:relative; 
+    top: -2px; 
+    left: 40%;
+    width: 200px;
+    height: 200px;
+    padding: 8px;
+    margin: auto;
+}
+
+img.picC {
+    position:relative; 
+    top: -2px; 
+    left: 40%;
+    width: 500px;
+    height: 500px;
+    padding: 8px;
+    margin: auto;
+}
+
+img.floatleft {
+    float: left;
+    margin: 0px 14px 3px 0px;
+}
+
+.text-and-image { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 18px;
+    
+}
+
+.text-and-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.text-and-image p {
+    font-size: 100;
+    line-height: 1.6;
+    color: black;
+    flex: 2;
+}
+
+.text-and-image a {
+    font-size: 100;
+    line-height: 1.6;
+    color: black;
+    flex: 2;
+    line-height: 2; 
+}
+
+#primarycontent {
+    padding: 20px;
+}
+
+.post {
+    margin: 1px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: 2px solid ;
+}
+
+.header h3 {
+    font-size: 1.8em;
+    padding: 10px 20px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    padding: 20px;
+}
+
+.secondsection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+}
+
+.aside {
+   width: 200%; 
+   border: 2px solid ;
+   padding: 20px;
+   font-size: 16px;
+   text-align: justify;
+}
+
+main {
+  width: 150%; 
+  margin-left: 400px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid ;
+    margin-left: 200px;
+    text-align: justify;
+}
+
+h2 {
+    color: black;
+    margin: 0 0 10px;
+}
+
+p {
+    color: black;
+    line-height: 1.6;
+}
+
+.lastSectionPictures {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+}
+
+.lastSectionPictures img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.lastSectionPictures video {
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#demo {
+    width: 80%;
+    margin: 0 auto; 
+}
+
+#footer {
+    border: double;
+    height: 66px;
+    text-align: center;
+    color: beige;
+    background-color: rgb(44, 44, 44);
+    position: absolute; 
+    left: 0;
+    right: 0;
+    width: 100%;
+    clear: both;
+    padding: 10px;
+
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.bg-color {
+    background-color: rgb(1, 78, 102); 
+}
+
+
+
+@media (max-width: 800px) {
+    body {
+        line-height: 1.5;
+        font-size: 14px; 
+    }
+
+    .header h3 {
+        font-size: 24px; 
+    }
+
+    .main-section {
+        margin: 20px; 
+        padding: 15px; 
+    }
+
+    .text-and-image {
+        flex-direction: column; 
+    }
+
+    .text-and-image img {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .secondsection {
+        grid-template-columns: 1fr; 
+    }
+
+    .aside {
+        width: 100%; 
+    }
+
+    .lastSectionPictures {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lastSectionPictures img {
+        width: 90%;
+    }
+
+    #footer {
+        font-size: 12px;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .header h3 {
+        font-size: 18px;
+    }
+
+    .main-section {
+        margin: 10px; 
+        padding: 10px; 
+    }
+
+    .lastSectionPictures img {
+        width: 100%; 
+    }
+
+    .text-and-image p, .text-and-image a {
+        font-size: 12px; 
+    }
+
+    .aside {
+        font-size: 14px; 
+    }
+
+    #menu .principal {
+        padding: 10px 5px; 
+    }
+}
